@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./coding.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ul{
+display: flex;
+width: 100%;
+justify-content: flex-end;
+align-items: center;
+padding: 20px;
+}
+
+.ul li, .ul li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ul li:hover{
+
+    background-color: rgb(177, 170, 170);
+    padding: 5px;
+}
+
+.ul li:not(:first-child) {
+    margin-left: 25px;
+}
+.lone-text{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(200, 197, 197, 0.388);
+    height: 100vh;
+    width:320px;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.ul-sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0 0 8%;
+    width: 100%;
+}
+.ul-sidebar li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+.ul-sidebar li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+   
+    
+}
+.ul-sidebar li:hover:not(:first-child){
+background-color: rgb(163, 163, 116);
+width: 100%;
+}
+.ul-sidebar li a:hover {
+color: black;
+font-weight: bolder;
+}
+
+.sidebar-x{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.sidebar-x i{
+    color: rgb(255, 78, 78);
+}
+
+ .bars{
+        display: none;
+    }
+
+
+@media(max-width: 800px){
+    .hide-link{
+        display: none;
+    }
+
+     .bars{
+        display: block;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+}

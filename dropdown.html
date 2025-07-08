@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <ul class="ul">
+            <li class="lone-text">Lightcode</li>
+            <li class="hide-link"><a href="#">Home</a></li>
+            <li class="hide-link"><a href="#">About Us</a></li>
+            <li class="hide-link"><a href="#">Services</a></li>
+            <li class="hide-link"><a href="#">Blog</a></li>
+            <li class="hide-link"><a href="#">Contact</a></li>
+            <li class="hide-link"><a href="#">Login</a></li>
+            <li onclick=showsidebar() class="bars" ><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+
+        </ul>
+    </nav>
+
+
+    <nav class="sidebar">
+        <ul class="ul-sidebar">
+            <li class="sidebar-x" onclick=hidesidebar()><i class="fa-solid fa-xmark"></i></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+<script>
+     function showsidebar(){
+         const sidebar=document.querySelector('.sidebar')
+         sidebar.style.display='flex'
+     }
+    
+     function hidesidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
+     }
+
+</script>
+</body>
+</html>
